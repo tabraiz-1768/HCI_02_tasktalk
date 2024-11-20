@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 9: Ask for Help in a Store</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="task-header">
+    <h1>Task 9: Ask for Help in a Store</h1>
+    <p>Enhance your communication by asking for help at a local store.</p>
+  </header>
+
+  <main class="task-content">
+    <section class="task-instructions">
+      <h2>Instructions:</h2>
+      <p>Visit a store and ask an employee for assistance in finding a product or information. This will help you practice asking for help in English in real-life situations.</p>
+    </section>
+
+    <section class="task-completion">
+      <label class="task-complete">
+        <input type="checkbox" id="task-complete-checkbox">
+        I have completed this task
+      </label>
+      <button id="next-task-btn" class="next-btn" disabled>Go to Next Task</button>
+    </section>
+
+    <a href="tasks.html" class="back-btn">Back to Task List</a>
+  </main>
+
+  <script>
+    const nextTaskButton = document.getElementById('next-task-btn');
+    const taskCompleteCheckbox = document.getElementById('task-complete-checkbox');
+
+    taskCompleteCheckbox.addEventListener('change', function () {
+      nextTaskButton.disabled = !taskCompleteCheckbox.checked;
+    });
+
+    nextTaskButton.addEventListener('click', function () {
+      window.location.href = 'task10.html';
+    });
+  </script>
+</body>
+</html>

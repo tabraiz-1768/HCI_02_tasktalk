@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task List</title>
+  <style>
+    /* Resetting margin and padding */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body and HTML taking full page */
+    body, html {
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f7fa;
+    }
+
+    /* Header styling */
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Home button at the top-right corner */
+    .home-btn {
+      background-color: #28a745;
+      color: white;
+      padding: 16px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 1.8em;
+      font-weight: bold;
+      transition: background-color 0.3s;
+      cursor: pointer;
+    }
+
+    .home-btn:hover {
+      background-color: #218838;
+    }
+
+    /* Main content with flexbox to center elements */
+    .task-list-content {
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 110px 0;
+    }
+
+    /* Stylish task button container */
+    .task-buttons {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 30px;
+      width: 85%;
+    }
+
+    /* Individual task button styling */
+    .task-btn {
+      background-color: #007bff;
+      color: white;
+      text-align: center;
+      padding: 30px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 1.5em;
+      font-weight: bold;
+      box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    /* Hover effect for task buttons */
+    .task-btn:hover {
+      background-color: #0056b3;
+      transform: scale(1.05);
+    }
+
+    /* Footer styling */
+    footer {
+      padding: 15px;
+      text-align: center;
+      background-color: #f4f4f9;
+      color: #555;
+    }
+
+    /* Media query for responsive behavior */
+    @media (max-width: 768px) {
+      .task-buttons {
+        grid-template-columns: 1fr;
+        width: 100%;
+      }
+
+      .task-btn {
+        padding: 25px;
+        font-size: 1.3em;
+      }
+    }
+    h1{
+      font-size: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 >Task List</h1>
+    <a href="index.html" class="home-btn">Home</a>
+  </header>
+
+  <main class="task-list-content">
+    <section class="task-buttons">
+      <a href="task1.html" class="task-btn">Task 1: Greet 5 New People</a>
+      <a href="task2.html" class="task-btn">Task 2: Introduce Yourself to a Stranger</a>
+      <a href="task3.html" class="task-btn">Task 3: Start a Conversation</a>
+      <a href="task4.html" class="task-btn">Task 4: Ask for Directions</a>
+      <a href="task5.html" class="task-btn">Task 5: Make a Phone Call</a>
+      <a href="task6.html" class="task-btn">Task 6: Compliment Someone</a>
+      <a href="task7.html" class="task-btn">Task 7: Talk About the Weather</a>
+      <a href="task8.html" class="task-btn">Task 8: Describe Your Weekend Plans</a>
+      <a href="task9.html" class="task-btn">Task 9: Ask for Help in a Store</a>
+      <a href="task10.html" class="task-btn">Task 10: Join a Group Discussion</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Task Talk</p>
+  </footer>
+
+</body>
+</html>

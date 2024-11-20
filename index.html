@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Talk - Learn English Through Tasks</title>
+  <style>
+    /* Full-page layout */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f7fa;
+    }
+
+    /* Header styling */
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 30px;
+      text-align: center;
+      font-size: 3em;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Main content layout */
+    main {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      padding: 40px 0;
+      height: calc(100% - 120px); /* full page minus header and footer */
+      gap: 50px;
+    }
+
+    /* Section for points with icons */
+    .highlight-section {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: 50px;
+      max-width: 1200px;
+      width: 100%;
+      padding: 20px;
+    }
+
+    /* Individual cards for steps */
+    .highlight-card {
+      flex: 1;
+      background-color: #007bff;
+      color: white;
+      border-radius: 15px;
+      padding: 30px;
+      text-align: center;
+      box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .highlight-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .highlight-card h3 {
+      font-size: 1.8em;
+      margin-bottom: 15px;
+    }
+
+    .highlight-card p {
+      font-size: 1.2em;
+    }
+
+    /* Adding an image */
+    .steps-image img {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Button for tasks */
+    .tasks-btn {
+      background-color: #28a745;
+      color: white;
+      padding: 20px 40px;
+      border-radius: 8px;
+      font-size: 1.5em;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s, transform 0.3s;
+      cursor: pointer;
+    }
+
+    .tasks-btn:hover {
+      background-color: #218838;
+      transform: scale(1.05);
+    }
+
+    /* Footer styling */
+    footer {
+      padding: 20px;
+      text-align: center;
+      background-color: #f4f4f9;
+      color: #555;
+    }
+
+    /* Responsive layout */
+    @media (max-width: 768px) {
+      .highlight-section {
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .highlight-card {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header for the website -->
+  <header>
+    Welcome to Task Talk
+  </header>
+
+  <!-- Main content with steps in card format -->
+  <main>
+    <section class="highlight-section">
+      <!-- Eye-catching steps in card format -->
+      <div class="highlight-card">
+        <h3>Start Small</h3>
+        <p>Begin with basic tasks like greeting new people.</p>
+      </div>
+
+      <div class="highlight-card">
+        <h3>Stay Consistent</h3>
+        <p>Complete one task daily to build the habit.</p>
+      </div>
+
+      <div class="highlight-card">
+        <h3>Build Confidence</h3>
+        <p>Confidence grows as you practice daily tasks.</p>
+      </div>
+    </section>
+
+    <!-- Image for aesthetic appeal -->
+
+
+    <!-- Button to start tasks -->
+    <a href="tasks.html" class="tasks-btn">Start Your Tasks</a>
+  </main>
+
+  <!-- Footer section -->
+  <footer>
+    <p>&copy; 2024 Task Talk</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 2: Ask for Directions</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Task 2: Ask for Directions</h1>
+    <p>Ask someone for directions to a nearby location. This will help you feel more comfortable engaging in casual conversations with strangers.</p>
+
+    <label>
+      <input type="checkbox" id="task-complete-checkbox">
+      I have completed this task
+    </label>
+    <button id="next-task-btn" class="next-button">Next Task</button>
+    <a href="tasks.html" class="back-button">Back to Task List</a>
+  </header>
+
+  <script>
+    const nextTaskButton = document.getElementById('next-task-btn');
+    const taskCompleteCheckbox = document.getElementById('task-complete-checkbox');
+
+    nextTaskButton.disabled = true;
+
+    taskCompleteCheckbox.addEventListener('change', function () {
+      nextTaskButton.disabled = !taskCompleteCheckbox.checked;
+    });
+
+    nextTaskButton.addEventListener('click', function () {
+      window.location.href = 'task3.html';
+    });
+  </script>
+</body>
+</html>
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 2: Ask for Directions</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="task-header">
+    <h1>Task 2: Ask for Directions</h1>
+    <p>Ask someone for directions to a nearby location. This will help you feel more comfortable engaging in casual conversations with strangers.</p>
+  </header>
+
+  <main class="task-content">
+    <section class="task-instructions">
+      <h2>Instructions:</h2>
+      <p>In this task, you will go to 2 random people and ask for instructions to a wellknow place. This will help you to communicate in a humble manner </p>
+    </section>
+
+    <section class="task-completion">
+      <label class="task-complete">
+        <input type="checkbox" id="task-complete-checkbox">
+        I have completed this task
+      </label>
+      <button id="next-task-btn" class="next-btn" disabled>Go to Next Task</button>
+    </section>
+    
+    <a href="tasks.html" class="back-btn">Back to Task List</a>
+  </main>
+
+  <script>
+    const nextTaskButton = document.getElementById('next-task-btn');
+    const taskCompleteCheckbox = document.getElementById('task-complete-checkbox');
+
+    taskCompleteCheckbox.addEventListener('change', function () {
+      nextTaskButton.disabled = !taskCompleteCheckbox.checked;
+    });
+
+    nextTaskButton.addEventListener('click', function () {
+      window.location.href = 'task3.html';
+    });
+  </script>
+</body>
+</html>

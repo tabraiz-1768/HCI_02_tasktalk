@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 5: Start a casual conversation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="task-header">
+    <h1>Task 5: Start a casual conversation</h1>
+    <p>Starting conversations can take out most of your fear of approaching people and help you build up your Confidence.</p>
+  </header>
+
+  <main class="task-content">
+    <section class="task-instructions">
+      <h2>Instructions:</h2>
+      <p>In this task, You meet 5 different people, observe them and figure out what they like and start the topic which would make them engage in a long conversation with you.</p>
+    </section>
+
+    <section class="task-completion">
+      <label class="task-complete">
+        <input type="checkbox" id="task-complete-checkbox">
+        I have completed this task
+      </label>
+      <button id="next-task-btn" class="next-btn" disabled>Go to Next Task</button>
+    </section>
+    
+    <a href="tasks.html" class="back-btn">Back to Task List</a>
+  </main>
+
+  <script>
+    const nextTaskButton = document.getElementById('next-task-btn');
+    const taskCompleteCheckbox = document.getElementById('task-complete-checkbox');
+
+    taskCompleteCheckbox.addEventListener('change', function () {
+      nextTaskButton.disabled = !taskCompleteCheckbox.checked;
+    });
+
+    nextTaskButton.addEventListener('click', function () {
+      window.location.href = 'task6.html';
+    });
+  </script>
+</body>
+</html>
+

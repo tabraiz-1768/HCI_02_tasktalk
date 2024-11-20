@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 10: Join a Group Discussion</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="task-header">
+    <h1>Task 10: Join a Group Discussion</h1>
+    <p>Participate in a group conversation to enhance your confidence and fluency.</p>
+  </header>
+
+  <main class="task-content">
+    <section class="task-instructions">
+      <h2>Instructions:</h2>
+      <p>Find an opportunity to join a group conversation. Whether it's at work, school, or with friends, try to contribute to the discussion. This will help you practice speaking in a group and build confidence in expressing your opinions.</p>
+    </section>
+
+    <section class="task-completion">
+      <label class="task-complete">
+        <input type="checkbox" id="task-complete-checkbox">
+        I have completed this task
+      </label>
+      <button id="next-task-btn" class="next-btn" disabled>Back to Task List</button>
+    </section>
+
+    <a href="tasks.html" class="back-btn">Back to Task List</a>
+  </main>
+
+  <script>
+    const nextTaskButton = document.getElementById('next-task-btn');
+    const taskCompleteCheckbox = document.getElementById('task-complete-checkbox');
+
+    taskCompleteCheckbox.addEventListener('change', function () {
+      nextTaskButton.disabled = !taskCompleteCheckbox.checked;
+    });
+
+    nextTaskButton.addEventListener('click', function () {
+      window.location.href = 'tasks.html';
+    });
+  </script>
+</body>
+</html>

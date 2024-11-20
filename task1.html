@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 1: Say Good Morning to 5 People</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="task-header">
+    <h1>Task 1: Say Good Morning to 5 People</h1>
+    <p>Boost your confidence by greeting 5 new people today.</p>
+  </header>
+
+  <main class="task-content">
+    <section class="task-instructions">
+      <h2>Instructions:</h2>
+      <p>In this task, you will greet 5 new people with a simple "Good Morning". The purpose is to increase your comfort with talking to strangers and to break the ice in conversations.</p>
+    </section>
+
+    <section class="task-completion">
+      <label class="task-complete">
+        <input type="checkbox" id="task-complete-checkbox">
+        I have completed this task
+      </label>
+      <button id="next-task-btn" class="next-btn" disabled>Go to Next Task</button>
+    </section>
+    
+    <a href="tasks.html" class="back-btn">Back to Task List</a>
+  </main>
+
+  <script>
+    const nextTaskButton = document.getElementById('next-task-btn');
+    const taskCompleteCheckbox = document.getElementById('task-complete-checkbox');
+
+    taskCompleteCheckbox.addEventListener('change', function () {
+      nextTaskButton.disabled = !taskCompleteCheckbox.checked;
+    });
+
+    nextTaskButton.addEventListener('click', function () {
+      window.location.href = 'task2.html';
+    });
+  </script>
+</body>
+</html>
